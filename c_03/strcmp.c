@@ -14,10 +14,10 @@ int		ft_strcmp(char *s1, char *s2)
 	return (0);
 }
 
-int main(void)
+int main(int argc, char **argv)
 {
-	char tab1[] = "salot";
-	char tab2[] = "salut";
-	printf("%d", ft_strcmp(tab1, tab2));
+	(void) argc;
+	(void) argv;
+	printf("%d", ft_strcmp(argv[1], argv[2]));
 	return (0);
 }
