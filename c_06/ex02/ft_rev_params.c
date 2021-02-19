@@ -17,7 +17,7 @@ int main(int argc, char **argv)
 	(void) argv;
 	int j = argc;
 
-	while (j >= 1)
+	while (j >= 2)
 	{
 		ft_putstr(argv[j]);
 		write(1, "\n", 1);
