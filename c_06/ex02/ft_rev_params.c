@@ -15,13 +15,11 @@ int main(int argc, char **argv)
 {	
 	(void) argc;
 	(void) argv;
-	int j = argc;
-
-	while (j >= 2)
+	
+	while (argc > 1)
 	{
-		ft_putstr(argv[j]);
+		ft_putstr(argv[--argc]);
 		write(1, "\n", 1);
-		j--;
 	}
 	return (0);
 }
